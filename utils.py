@@ -299,10 +299,10 @@ def tune_batch(N, steps, T0_values, T1_values, batches_values, trials=5):
 
 def tune_all(N=11, steps=200000, trials=5):
 
-    temps = np.linspace(0.1, 0.9, 9)   #Parameters to try and tune
-    T0_values = np.linspace(0.5, 1.5, 11)
+    temps = np.linspace(0.1, 3, 30)   #Parameters to try and tune
+    T0_values = np.linspace(0.5, 2, 16)
     T1_values = np.array([0.1, 0.2, 0.3, 0.4])
-    powers = [1, 2, 3]
+    powers = [2, 3, 4]
     batch_values = [5]
 
 
